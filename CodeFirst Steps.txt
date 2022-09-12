@@ -1,0 +1,49 @@
+Code First Approach:
+
+* First Select ASP.NET Cor Web App(Model-View-Controller).
+
+* Install  Entity Framework core.sqlserver from manage nuget package.
+
+* Then create model class so  Go to Model Folder and Add one class name as  Employee in that class write properities which we want:
+
+     :-short form to write properties is PROP+TAB
+
+       [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Designation { get; set; }
+        public int Salary { get; set; }
+
+* Then create dabase context class  name as  EmployeeContext and write: 
+
+    :-aapla konta pan context class asela tari to inheriate karaycha DbContext ne. 
+    :-class aaplyala database sobat interact karel.
+      :-DbContextOptions this is simple generic class
+    :-base keyword used for  calling base class constructor name as DbContext
+    :-base clas madhe aapan konta database provider use krnar ahe te store krto
+
+    public class EmployeeContext: DbContext
+    {
+        public EmployeeContext(DbContextOptions<EmployeeContext>options):base(options)   //create constructor (paramatrized)
+        {
+
+        }
+        public DbSet<Employee> Employees { get; set; }   //Employees is the table name of our Database
+    }
+
+
+*Create Connection String and Dependency in startup.cs
+        :-string variable will  be create and in that variable define our connection string.
+        :-In that string 1 write server name and server means where our database will create
+
+  
+            string cs = "server=(localdb)\\mssqllocaldb; database=CodeFirstEFCore; trusted_connection=true;";     
+            services.AddDbContext<EmployeeContext>(options => options.UseSqlServer(cs));
+
+* Then create  Controller with views 
+    :-choose MVC Controller with views,using Entity Framework.
+
+* Then create migration 
+    :-add-migration init
+    :-update-database

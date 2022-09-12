@@ -1,0 +1,295 @@
+What is the Goal?
+What should be the scope?
+What data do we have?
+Who will the team consist of ?
+
+
+1- What is the Goal?
+
+It is often tempting to start from scratch without making a plan, but it is important to know from the start what should be the goal and how can we measure success in this project. It is sometimes useful to think why are we doing this? What do we need to focus the most on? Is it more important to make it more efficient within the organization? Do we want to create a better user experience?
+Sometimes it might be good to fix some number goals. We have a goal that the bot should take 60% of incoming emails and process them and the rest a human can handle them manually. It is then easy to see if you reached your goal or not.
+
+2- What should be the scope? what should be included in the project? 
+
+There are many use cases for a Documentbot but we advise to start small and start with one use case, and then after a while you can start expanding with more and harder use cases.
+
+If you have issues finding out what use case to use then here is some guidelines.
+
+Typical Documentbot projects have:
+Large amount of incoming documents,
+Many documents with similar content,
+The ability to define clear document types, so it is easy to group different documents.
+Access to historical documents that we can use as training data.
+
+3- What data do we have?
+
+If you have some historical documents that you can use this is great, so if you have let’s say 50 documents, you can start with that, if you have 100, 1000 even better. The more data the better the Documentbot will be. If you have no documents at all no worries, you can start of with a Documentbot based on rules and train it with more training data as it goes. The Documentbot will become smarter and more performant through time. 
+
+4- Who will the team cons
+
+A Documentbot needs some humans to be built, trained and maintained. it is important that the team is motivated about it. The team must consist of different types of profiles, but we recommend that there should be one in the team with background in customer service or someone who has experience talking with customers because they will have the best input knowledge into the behaviors and needs of the actual clients/customers. When you have set the team, it is important to be structured and have meetings to ensure that the bot is doing well.
+
+Summary:
+
+Set up clear goals 
+Know the scope of your project 
+what data you have 
+who will the team be
+
+
+
+
+
+
+
+
+******************
+Simplifai studio is a state-of-the-art platform for Intelligent Process Automation.
+
+It is the platform created by Simplifai where you can build and maintain bots, you can also analyze their performances and see the users' Interaction with their bots.
+
+All of Simplifai’s products are built and maintained via Studio:
+
+Chatbot
+Emailbot
+Documentbot 
+The products in Simplifai studio are of the shelf software products, this means that businesses in various industries can use Simplifai studio to build bots for their business. In Studio you can configure integrations, that way you are able to customize the bots for all customers. We will go deeper into how to set up those integrations throughout the course.
+
+What is important to know is that you don’t need any technical background to be able to build bots in Simplifai studio, through this course you will be able to learn how to build bots and configure them.
+
+Simplifai studio allows you to get access to all these products. This means that you have everything in one place, It makes it easier to jump between the products and it is also possible to share contents between the bots for example entities lists, intents and synonyms lists.
+
+
+
+
+
+************
+What is a document Type?    
+
+A document type is a type of document you can regroup under one word or expression. 
+
+How to properly group documents? 
+
+This is not always straight forward.
+ Do you decide to group them into a few, but large groups, or should you create smaller groups, but with a large number? 
+
+There are many considerations to take, but one thing to keep in mind is that the more document types you have the harder it is to create rules that will work well for all types. (We will learn how to create rules later in the course).
+ It is therefore often wise to keep the number of document types down, and instead use information extraction more actively. 
+
+For example, If I take the example of an Insurance company, 
+I believe the documents I would get could fall into the document types Invoices and Contracts.
+ It is just an example and there are many ways to do it
+
+
+**************.
+What are Entities? 
+
+An entity is an important recurring keyword. It consists of one or a few words. 
+
+When the information we want the bot to find consists of one or a few words, we often use entities. 
+This can for example be names, addresses, phone numbers, case numbers or job titles. 
+When we tag the document in order to teach the bot to understand different entities, we mark the specific words in the document.
+
+Before you decide to create entities, think through how you will use them. 
+It is not necessary to spend time on teaching the bot to find entities if they are not useful for the case you are working on.
+
+I will now show you in practice what kind of entities you can set up related to the use case of an Insurance company. 
+
+
+
+****************
+What are Synonyms? 
+
+Just like in the English language, what is referred to as synonyms here in Studio is words that share the same meaning. 
+
+However, the synonym lists in Studio do not work the same way as a regular synonym list.  
+
+You must find synonyms corresponding to the differentiate ways the clients could write sentences in a document. 
+By adding those Synonyms,
+ the bot will be able to recognize different ways of saying the same thing.
+
+
+
+*******************
+What is the Annotation setup? 
+
+The purpose of the annotation is to differentiate the document types between them, as well as the intents and entities. You can choose colors and key letters to notify which intent, entity or document type it is.
+
+You have to set up short keys, colors and lists in the annotation setup, that make sense for you and your colleagues. 
+It is also good to create guidelines so that all members of the team use the same tagging method. 
+Even though you all have agreed about the main direction, there might be some special cases that you should clarify. 
+You will see that you can use the “guidelines” section in studio in order to collaborate in a better way.
+
+
+
+*************What does Tagging Documents mean?
+
+
+
+When you mark a document with entities, intents or document types, it is called tagging. 
+Tagging is basically teaching the bot how to recognize those document types, intents and entities. 
+Thanks to tagging, 
+the bot will be able to recognize those values in incoming documents by itself.  
+
+
+************
+What is a page categorization bot ? 
+
+You will see that when creating a new document you can choose the option page categorization. 
+If you choose this option, the original logical document will get split and pages under the same document type will get merged together as a separate document. 
+Each page will be evaluated separately. 
+
+The page categorization bot is a different product, It is another type of Documentbot. 
+The page categorization bot will only focus on Document types,
+ if you create a page categorization bot, you will not be able to use Intents or Entities. 
+
+
+
+***********What is an Email template? 
+
+An Email template is useful when you want the bot to reply or forward an email by itself, you can setup several email templates that will fit various situations, like trying to get missing information to classify a document for example.
+
+You will be using the email templates in the action flow when you want to add the replying or forwarding actions. 
+
+The email templates may be utilized in as many places in the action flow as you need. 
+
+
+
+****************What are Variables?
+
+Variables are Placeholders for dynamic/specific information. 
+
+Variables allow you to personalize email templates, if you use a name variable, 
+the Documentbot will be able to recognize the name in the document and reuse it in the reply.
+ That way you can make personalized answers.
+
+You will see in the next video that you are able to use variables in many different ways. 
+
+But it is important to know that you will have to first create the variables in the variables section before you are able to use them in the action flow. 
+
+It will organize pages from a document into different Document types.
+
+
+
+
+*******************What is the Action Flow? 
+
+By setting up the training data we have taught the Documentbot to analyze and understand the incoming documents.
+ But we have not yet built the action flow. In the action page, you can define what the Documentbot will do with the different documents. 
+What actions will be performed to the incoming documents?
+
+In the Studio application you will see that you can setup actions and conditions. 
+
+There is no one way of building an action flow and this is what makes it so interesting but there are best practices that we will talk about and that you should keep in mind.
+
+
+
+
+********What is an API? 
+
+Application programming interface,  is a software intermediary that allows two applications to interact with each other. It might sound a little bit blurry to you so let us take a real-life example.
+
+When you are in a restaurant and want to order food, you have many options to choose from. The food you order is prepared in the kitchen. But for the chef to know what to prepare and how to deliver the food to you there is the waiter. He acts as an intermediary between the customer and the kitchen, he acts as an API.
+
+In our case we use API’s to communicate with external CRM.
+
+
+
+*********What are Connectors ?
+
+Connectors allow you to connect your bot to a separate system using an external link. You can then share data from your bot to an external link and from the external link to your bot.
+
+Let’s take an example, somebody asks for the weather in Oslo, the place name (Oslo) is the data coming from your bot that will be sent to the external link that is a weather app, and the weather app will be able to come up with the response to that information. The response is the temperature in Oslo, so it will share back the information temperature with the bot.
+
+It can be seen as an exchange of information between the bot and external links.
+
+You can also use connectors to link your bot to a CRM, such as HubSpot, the information from the bot is connected to the CRM and everything is then processed through the CRM.
+
+We of course personalize depending on the CRM and the expectations, you can for example add an access key or token in order to be able to access the CRM. The access key or token could be a valid IP address.
+
+You can also use connectors as a way to store information.
+
+
+
+***********What do we mean by Rules and Exceptions?  *******************
+
+We can add rules and exceptions in addition to the training data (Document types, Intents, Entities), that is sent to the language engine. These rules or exceptions will be prioritized by the Digital Employee when new Documents are being processed.
+
+These rules and exceptions are non-dynamic and will always be triggered if the set condition is met. This is usually used for keywords that you know will always belong to that document type. For example, if you get a lot of spam from one email, you can put that email as a rule in the Spam email type, so it will always come in the spam folder.  
+
+Just bear in mind that all the rules you implement will help make the bot more precise but also restrict it in some ways.  You do not have to use rules and exceptions. It is an option that can be useful in some cases but  you want to be teaching your bot through training data mainly and not rules. 
+
+Another option available is RegEx: 
+
+We can create regular expressions for entities with standard formulas. 
+
+A RegEx will tag everything in the text that fits a certain rule.
+
+Here is an example of RegEx : /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$. 
+
+This RegEx is testing if any text fits the structure of a standard email address.  
+
+There are a lot of RegExes online, so the easiest way to find one is with a simple Google search.
+
+
+
+
+
+
+
+****************How to analyze your bot performance? 
+
+
+
+The dashboard will allow you to analyze the data from your bot, how it is performing and how it handles the various incoming documents regarding document types, intents and entities as well as actions.
+
+Another way you can analyze your bot performance is to look directly into one of your document and see how the bot handle the specific document.
+ When going into your document you will notice at the bottom, 
+a blue action button, if you click on it you can see how well the Documentbot recognized document types, intents, entities, as well as its confidence level and the type of action it took specific to this document.
+
+
+
+
+******************How to properly define your project? 
+
+
+
+Before you get started, ask yourself those questions:
+
+What is the Goal?
+What should be the scope?
+What data do we have?
+Who will the team consist of ?
+
+
+1- What is the Goal?
+
+It is often tempting to start from scratch without making a plan, but it is important to know from the start what should be the goal and how can we measure success in this project. It is sometimes useful to think why are we doing this? what is more important? What do we need to focus the most on? Is it more important to make it efficient within the organization? Do we want to create a better user experience?
+Sometimes it might be good to fix some goals. We have a goal that the bot should take 60% of incoming emails and process them and the rest a human can handle them manually. It is then easy to see if you reached your goal or not.
+
+2- What should be the scope? What should be included in the project? 
+
+There are many use cases for an Emailbot but we advise to start small and start with one use case, and then after a while you can start expanding with more and harder use cases.
+
+If you have issues finding out what use case to use then here is some guidelines.
+
+Typical Emailbot projects have:
+Large amount of incoming emails,
+Many emails with similar content,
+The ability to define clear Email type, so it is easy to group different emails.
+Access to historical emails that they can use as training data.
+
+3- What data do we have?
+
+If you have some historical emails that you can use this is great, so if you have let’s say 50 emails, you can start with that, if you have 100, 1000 even better. The more data the better the Emailbot will be. If you have no emails at all, you can start of with an Emailbot based on rules and train it with more training data as it goes. The Emailbot will become smarter and more performant through time. 
+
+4- Who will the team consist of?
+
+An Emailbot needs some humans to be built, trained and maintained. it is important that the team is motivated about it. It consists of different types of profiles, but we recommend there is one in the team with background in customer service or someone who has experience talking with customers because they will have the best input knowledge into the behaviors and needs of the actual clients/customers. When you have set the team, it is important to be structured and have meetings to ensure that the bot is doing well.
+
+Summary:
+
+Set up clear goals 
+Know the scope of your project 
+What data you have 
+Who will the team be

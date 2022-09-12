@@ -1,0 +1,75 @@
+********** function returning the max between two numbers 
+int max(int num1, int num2) {
+
+  
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+
+
+2))
+
+
+-----------------------------------
+
+accessModifier async returnType functionName() 
+{
+ Body
+}
+
+Type Can Be ANYTHING!!!!!!
+
+
+// SynchronousMethod
+
+public int Sum()
+{
+ return 10;
+}
+
+// AsynchronousMethod : Always returns a Task of type x..!!!!
+
+public async Task<int> Sum()
+{
+ await ;
+ return 10;
+}
+
+Async  sync
+Task = void
+
+
+=======================================
+
+Request-> 
+	Controller->	BLL->	Dal->	Database
+
+Database operations should be done only in DAL/Repositories
+Inject Repositories/Dal in Service/Bll
+Inject Service/Bll in Controller
+
+Inject using constructor
+
+Register/Configure service/repository in startup.
+
+
+
+BLL 	
+ StudentCreateDto
+DAL
+ Student
+
+2, 3, 5, 7, 8 9, 10, 
+
+
+
+
+
+
+

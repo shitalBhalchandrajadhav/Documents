@@ -1,0 +1,55 @@
+using System;
+using System.Reflection;
+
+class Program
+{
+    static void Main()
+    {
+        int[] Arr = new int[10];
+
+        if (Arr.GetType().IsPointer == true)
+        {
+            Console.WriteLine("Arr is a pointer");
+        }
+        else
+        {
+            Console.WriteLine("Arr is not a pointer");
+        }
+    }
+}
+
+@@@@@@@@@@@@@@@@@@@22
+
+
+class Test{
+public static void main(){
+int[] a= int[5];
+if(a.GetType().IsPointer ==true){
+Console.WriteLine(arr is a pointer);
+}
+else console.WriteLine("ggdg");
+}}}
+
+
+
+**********
+class sum{
+int a=1;
+int b=2;
+int c= a+b;
+console.println("a+b" +c);
+}
+
+
+****
+
+
+public class Circle{
+int Pi=3.14;
+int r=4;
+int c= pi*r*r;
+
+console.writeline("area of circle is"+c);
+
+
+************

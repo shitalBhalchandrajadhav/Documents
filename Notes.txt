@@ -1,0 +1,66 @@
+https://www.youtube.com/watch?v=4H2ZY0x42DU&list=PL4HegTSNb5KGj9SXs_8zXSWHoRm3Z94JF&index=2
+
+
+Online Food Ordering Website using ASP.Net C# & SQL Server Part 1 | Database Designs and Diagram
+
+Scaffold-DbContext -Provider Microsoft.EntityFrameworkCore.SqlServer -Connection "Data Source=(localdb)\mssqllocaldb;Initial Catalog=Student;Integrated Security=True;"
+ Task
+1) Solid Principle of c#.
+
+@##############@ Importance Points 
+
+
+Components of .net framework
+MSIL
+State management
+trace vs debug
+string vs stringbuilder
+valueType vs referenceType
+session
+Array
+Immutable - Once thing is created you canot modify
+boxing & unboxing
+HttpHandler
+Interoprability
+finalize vs dispose
+Cookies - Session, Persistent
+Response.redirect & server.transfer
+managed & unmanaged code
+Constant vs Read-Only
+BCL
+namespace vs assembly
+Sealed
+Constructors - 5types
+Gargbase collector
+Caching
+Localization vs Globalization
+Delegate
+Interface
+Abstract class
+Page Life Cycle
+CSFR
+Antiforgery token
+CORS policy
+Cros page posting or Postback
+Authentication
+Authorization
+MIME
+ENum
+Ref & Out keywords
+this keyword
+properties their accessors
+Partial
+IEnumerable vs IQueryable
+Polimorphism - CompileTime & RunTime
+Designing patterns
+Equals() vs ==
+Is vs As operator
+? & ??
+overloading vs overriding
+generics
+virtual method
+Serialization vs Desrialization
+Using stmt
+Jagged Array
+Multithreading
+LINQ
